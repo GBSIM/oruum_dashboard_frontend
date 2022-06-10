@@ -12,8 +12,8 @@ const initialState = {
     input: "AAPL",
 
     // basic information
-    name: "종목이름",
-    ticker: "",
+    name: "애플",
+    ticker: "AAPL",
     status: "",
     capability: "2.1T",
     currency: "$",
@@ -29,7 +29,7 @@ const initialState = {
     lastOpen: 140,
     lastHigh: 150,
     lastLow: 130,
-    lastChange: 2.0,
+    lastChange: 2.15,
     lastChangeRate: 1.07,
     lastChangeSign: true,
     lastVolume: 10000,

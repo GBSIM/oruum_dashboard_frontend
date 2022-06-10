@@ -1,0 +1,21 @@
+.news-container {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.news-container:hover {
+    background: #F8F8F8;
+}
+
+.news-text-container {
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .news-image-container {
+        display: none;
+    }
+    .news-text-container {
+        margin: 0px;
+    }
+}

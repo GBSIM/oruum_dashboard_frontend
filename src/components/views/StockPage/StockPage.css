@@ -1,0 +1,15 @@
+.stock-page-check-point-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .stock-page-check-point-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .stock-page-check-point-spacer {
+        min-height: 10px;
+    }
+}

@@ -7,6 +7,7 @@ export const TYPING = "STOCK/TYPING";
 export const SEARCHSTATUS = "STOCK/SEARCHSTATUS";
 export const ADDSTOCKTAG = 'STOCK/ADDSTOCKTAG';
 export const EDITSTOCKTAG = 'STOCK/EDITSTOCKTAG';
+export const GET_CURRENT_PRICE = "STOCK/GET_CURRENT_PRICE";
 
 const initialState = {
     input: "AAPL",
@@ -110,13 +111,22 @@ const initialState = {
 
 };
 
-export async function getPrice(tickerInput, startDate, endDate) {
-    const body = {
-      ticker: tickerInput,
-      startDate: startDate,
-      endDate: endDate
+export async function getCurrentPrice(tickerInput) {
+  const request = await axios.get('http://3.38.30.153/api/stockpricehistory/'+tickerInput)
+    .then(response => response.data)
+  
+  if (request.count > 0) {
+    return {
+      type: GET_CURRENT_PRICE,
+      response: request,
+      status: "success",
+      ticker: tickerInput
     }
-    const request = await axios.post('/api/stock/price', body)
+  }
+}
+
+export async function getPrice(tickerInput) {
+    const request = await axios.post('http://3.38.30.153/api/stockpricehistory/'+tickerInput)
     .then(response => response.data)
 
     let result = "none";
@@ -154,6 +164,12 @@ export function setStatus(status) {
 
 const stock = (state = initialState, action) => {
   switch (action.type) {
+    case GET_CURRENT_PRICE:
+      return {
+        ...state,
+        currentPrice: action.response.results[0].price_close,
+      };
+
     case SEARCHSUCCESS:
       return {
         ...state,

@@ -5,6 +5,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from 'react';
 
 import LandingPage from './components/views/LandingPage/LandingPage';
 import StockPage from './components/views/StockPage/StockPage';
@@ -13,7 +15,13 @@ import IndustryPage from './components/views/IndustryPage/IndustryPage';
 import PortfolioPage from './components/views/PortfolioPage/PortfolioPage';
 import SimulationPage from './components/views/SimulationPage/SimulationPage';
 
+import { getCurrentPrice } from './_reducers/stock';
+
 function App() {
+  const dispatch = useDispatch();
+  useEffect(()=> {
+    dispatch(getCurrentPrice('aapl'));
+  },[]);
 
   return (
     <Router>

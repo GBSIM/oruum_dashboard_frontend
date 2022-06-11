@@ -8,7 +8,7 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from 'react';
 
-import LandingPage from './components/views/LandingPage/LandingPage';
+import HomePage from './components/views/HomePage/HomePage';
 import StockPage from './components/views/StockPage/StockPage';
 import EconomyPage from './components/views/EconomyPage/EconomyPage';
 import IndustryPage from './components/views/IndustryPage/IndustryPage';
@@ -27,7 +27,7 @@ function App() {
     <Router>
       <div>
         <Routes>  
-          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/" element={<HomePage />} />
           <Route exact path="/Stock" element={<StockPage />} />
           <Route exact path="/Economy" element={<EconomyPage />} />
           <Route exact path="/Industry" element={<IndustryPage />} />

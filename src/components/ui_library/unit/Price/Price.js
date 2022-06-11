@@ -6,7 +6,7 @@ export default function Price(props) {
     return (
         <div>
             <h2 className="price">
-                {price}
+                {props.unit}{price}
             </h2>
         </div>
     )

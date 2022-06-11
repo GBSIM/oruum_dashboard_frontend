@@ -9,7 +9,7 @@ import PriceChange from '../../unit/PriceChange/PriceChange';
 import './StockPriceBlock.css';
 
 export default function StockPriceBlock() {
-    const {currentPrice, lastChange, lastChangeRate, lastChangeSign} = useSelector(state => state.stock);
+    const {currentPrice, lastChange, lastChangeRate, lastChangeSign, currency} = useSelector(state => state.stock);
 
     return (
         <div className='stock-price-block-container'>
@@ -19,7 +19,7 @@ export default function StockPriceBlock() {
                     <Name></Name><Ticker></Ticker>
                 </div>
                 <div className='stock-price-block'>
-                    <Price price={currentPrice}></Price>
+                    <Price price={currentPrice} unit={currency}></Price>
                     <PriceChange lastChange={lastChange} lastChangeRate={lastChangeRate} lastChangeSign={lastChangeSign}></PriceChange>
                 </div>
             </div>

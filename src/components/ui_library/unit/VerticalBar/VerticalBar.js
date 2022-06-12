@@ -4,6 +4,8 @@ export default function VerticalBar(props) {
     const width = props.width;
     const horizontalMargin = props.horizontalMargin;
     const height = props.height;
+    const bottomMargin = props.bottomMargin;
+    const topMargin = props.topMargin;
 
     return (
         <div className='vertical-bar' 
@@ -11,7 +13,9 @@ export default function VerticalBar(props) {
                 width:width,
                 height:height,
                 marginRight:horizontalMargin,
-                marginLeft:horizontalMargin,}}>
+                marginLeft:horizontalMargin,
+                marginTop:topMargin,
+                marginBottom:bottomMargin}}>
         </div>
     )
 }

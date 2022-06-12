@@ -17,6 +17,7 @@ import StockNews from '../../ui_library/stock/StockNews/StockNews';
 import IncomeRoundedBarGraphs from '../../ui_library/stock/IncomeRoundedBarGraphs/IncomeRoundedBarGraphs';
 import ExpertExpectations from '../../ui_library/stock/ExpertExpectations/ExpertExpectations';
 import LeaderDetail from '../../ui_library/stock/LeaderDetail/LeaderDetail';
+import StockSummaryBlock from '../../ui_library/stock/StockSummaryBlock/StockSummaryBlock';
 
 export default function StockPage() {
     return (
@@ -31,6 +32,8 @@ export default function StockPage() {
                     <div style={{minHeight:'10px'}}></div>
                     <StockTags></StockTags>            
                     <StockPriceLineGraph></StockPriceLineGraph>
+                    <div style={{minHeight:'10px'}}></div>
+                    <StockSummaryBlock></StockSummaryBlock>
                     <div style={{minHeight:'30px'}}></div>
                     <div className='stock-page-check-point-container'>
                         <StockBuyPoint></StockBuyPoint>

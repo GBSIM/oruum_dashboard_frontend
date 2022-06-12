@@ -3,7 +3,7 @@ import HomeContentsTitle from "../HomeContentsTitle/HomeContentsTitle"
 import HomeContentsText from "../HomeContentsText/HomeContentsText"
 import TextWithVerticalBar from "../../unit/TextWithVerticalBar/TextWithVerticalBar"
 
-export default function StockMenuExplanation() {
+export default function HomeMenuStockExplanation() {
     return (
         <div>
             <HomeMenuTitle title='주식 데이터'></HomeMenuTitle>

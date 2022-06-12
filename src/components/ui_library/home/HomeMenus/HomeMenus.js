@@ -1,6 +1,7 @@
 import './HomeMenus.css';
 import VerticalBar from '../../unit/VerticalBar/VerticalBar';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { changeHomeMenu } from '../../../../_reducers/home';
 
 
 export default function HomeMenus() {
@@ -22,8 +23,13 @@ export default function HomeMenus() {
 }
 
 function HomeMenu(props) {
+    const dispatch = useDispatch();
     const currentHomeMenu = props.currentHomeMenu;
     const homeMenuText = props.homeMenuText;
+
+    const changeHomeContents = () => {
+        dispatch(changeHomeMenu(homeMenuText));
+    }
 
     if (currentHomeMenu === homeMenuText) {
         return (
@@ -36,7 +42,7 @@ function HomeMenu(props) {
     } else {
         return (
             <div>
-                <button>
+                <button className='home-menu-button' onClick={changeHomeContents}>
                     <span className="home-menu-button-text off">{homeMenuText}</span>
                 </button>
             </div>

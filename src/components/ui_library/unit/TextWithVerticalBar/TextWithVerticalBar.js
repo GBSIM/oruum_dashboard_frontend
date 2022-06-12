@@ -14,13 +14,20 @@ export default function TextWithVerticalBar(props) {
                 <h1 className='right-text'>{rightText}</h1>
             </div>
         )
-    }
-    else if (textType === 'span') {
+    } else if (textType === 'span') {
         return (
             <div className='text-with-vertical-bar-container'>
                 <span className='left-text'>{leftText}</span>
                 <VerticalBar width='2px' horizontalMargin='20px' height='20px'></VerticalBar>
                 <span className='right-text'>{rightText}</span>
+            </div>
+        )
+    } else if (textType === 'h3') {
+        return (
+            <div className='text-with-vertical-bar-container'>
+                <h3 className='left-text' style={{color:props.leftColor}}>{leftText}</h3>
+                <VerticalBar width='2px' horizontalMargin='20px' height='20px'></VerticalBar>
+                <h3 className='right-text' style={{color:props.rightColor}}>{rightText}</h3>
             </div>
         )
     }

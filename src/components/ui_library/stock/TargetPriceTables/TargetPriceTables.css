@@ -1,0 +1,14 @@
+.target-price-tables-contents-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .target-price-tables-contents-container {
+        flex-direction: column;
+    }
+    .target-price-tables-divider {
+        display: none;
+    }
+}

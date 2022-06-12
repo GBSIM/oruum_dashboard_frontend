@@ -18,6 +18,7 @@ import IncomeRoundedBarGraphs from '../../ui_library/stock/IncomeRoundedBarGraph
 import ExpertExpectations from '../../ui_library/stock/ExpertExpectations/ExpertExpectations';
 import LeaderDetail from '../../ui_library/stock/LeaderDetail/LeaderDetail';
 import StockSummaryBlock from '../../ui_library/stock/StockSummaryBlock/StockSummaryBlock';
+import TargetPriceTables from '../../ui_library/stock/TargetPriceTables/TargetPriceTables';
 
 export default function StockPage() {
     return (
@@ -52,6 +53,8 @@ export default function StockPage() {
                     <IncomeRoundedBarGraphs></IncomeRoundedBarGraphs>
                     <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
                     <ExpertExpectations></ExpertExpectations>
+                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
+                    <TargetPriceTables></TargetPriceTables>
                     <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
                     <LeaderDetail></LeaderDetail>
                 </div>

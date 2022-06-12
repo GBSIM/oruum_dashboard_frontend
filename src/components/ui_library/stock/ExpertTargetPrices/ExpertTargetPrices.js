@@ -9,10 +9,26 @@ export default function ExpertTargetPrices() {
     const targetPriceAvgMargin = ((targetPriceAvg - currentPrice) / currentPrice * 100).toFixed(2);
     const targetPriceLowMargin = ((targetPriceLow - currentPrice) / currentPrice * 100).toFixed(2);
 
+    let currentPriceTopPosition;
+    const priceOverTargetPriceHighPosition = '-40px';
+    const priceOverTargetPriceAvgPosition = '20px';
+    const priceOverTargetPriceLowPosition = '120px';
+    const priceBelowTargetPriceLowPosition = '190px';
+
+    if (currentPrice > targetPriceHigh) {
+        currentPriceTopPosition = priceOverTargetPriceHighPosition;
+    } else if (currentPrice > targetPriceAvg) {
+        currentPriceTopPosition = priceOverTargetPriceAvgPosition;
+    } else if (currentPrice > targetPriceLow) {
+        currentPriceTopPosition = priceOverTargetPriceLowPosition;
+    } else {
+        currentPriceTopPosition = priceBelowTargetPriceLowPosition;
+    }
+    
     return (
         <div className='expert-target-prices-container'>
             <div style={{position:'relative'}}>
-                <div style={{position:'absolute',top:'80px',left:'3px',display:'flex',flexDirection:'row',alignItems:'center'}}>
+                <div style={{position:'absolute',top:currentPriceTopPosition,left:'3px',display:'flex',flexDirection:'row',alignItems:'center'}}>
                     <div style={{background:'#F8F8F8',width:'100px',height:'2px',marginTop:'13px'}}></div>
                     <div style={{minWidth:'10px'}}></div>
                     <CurrentPrice title='현재가' currency={currency} color='#696969' targetPrice={currentPrice}></CurrentPrice>

@@ -15,13 +15,30 @@ import IndustryPage from './components/views/IndustryPage/IndustryPage';
 import PortfolioPage from './components/views/PortfolioPage/PortfolioPage';
 import SimulationPage from './components/views/SimulationPage/SimulationPage';
 
-import { getCurrentPrice } from './_reducers/stock';
+import {getCurrentPrice} from './_reducers/stock';
+import { changePage } from './_reducers/pager';
+
 
 function App() {
   const dispatch = useDispatch();
   useEffect(()=> {
     dispatch(getCurrentPrice('aapl'));
   },[]);
+
+  const currentPath = window.location.pathname;
+  if (currentPath === "/") {
+    dispatch(changePage('대쉬보드 홈'));
+  } else if (currentPath === "/Stock") {
+    dispatch(changePage('주식 데이터'));
+  } else if (currentPath === "/Economy") {
+    dispatch(changePage('경제 데이터'));
+  } else if (currentPath === "/Industry") {
+    dispatch(changePage('산업 데이터'));
+  } else if (currentPath === "/Portfolio") {
+    dispatch(changePage('포트폴리오 관리'));
+  } else if (currentPath === "/Simulation") {
+    dispatch(changePage('시뮬레이션'));
+  }
 
   return (
     <Router>

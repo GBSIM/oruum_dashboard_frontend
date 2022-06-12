@@ -13,27 +13,32 @@ export default function BottomNavMenuBar() {
                 activatedImage={require('./images/icon_home_on.png')}
                 deactivatedImage={require('./images/icon_home_off.png')}
                 menuName='대쉬보드 홈'
-                currentPage = {page}></IconMenu>
+                currentPage = {page}
+                url='/'></IconMenu>
             <IconMenu
                 activatedImage={require('./images/icon_stock_on.png')}
                 deactivatedImage={require('./images/icon_stock_off.png')}
                 menuName='주식 데이터'
-                currentPage = {page}></IconMenu>
+                currentPage = {page}
+                url='/Stock'></IconMenu>
             <IconMenu
                 activatedImage={require('./images/icon_economy_on.png')}
                 deactivatedImage={require('./images/icon_economy_off.png')}
                 menuName='경제 데이터'
-                currentPage = {page}></IconMenu>
+                currentPage = {page}
+                url='/Economy'></IconMenu>
             <IconMenu
                 activatedImage={require('./images/icon_industry_on.png')}
                 deactivatedImage={require('./images/icon_industry_off.png')}
                 menuName='산업 데이터'
-                currentPage = {page}></IconMenu>
+                currentPage = {page}
+                url='/Industry'></IconMenu>
             <IconMenu
                 activatedImage={require('./images/icon_portfolio_on.png')}
                 deactivatedImage={require('./images/icon_portfolio_off.png')}
                 menuName='포트폴리오 관리'
-                currentPage = {page}></IconMenu>
+                currentPage = {page}
+                url='/Portfolio'></IconMenu>
         </div>
     )
 }

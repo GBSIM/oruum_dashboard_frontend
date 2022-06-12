@@ -4,6 +4,10 @@
     border-radius: 50%;
     background: rgb(52,177,153);
     display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-circle-button:hover {

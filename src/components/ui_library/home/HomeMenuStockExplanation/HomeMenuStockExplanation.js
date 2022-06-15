@@ -50,12 +50,12 @@ export default function HomeMenuStockExplanation() {
             <div style={{minHeight:'10px'}}></div>
             <TextWithVerticalBar 
                 textType='span' 
-                leftText='재품' 
+                leftText='제품' 
                 rightText='해당 종목의 제품군과 매출 비율, 전년 대비 성장률, 그리고 각 제품 별 태그를 추가해주세요.'></TextWithVerticalBar>
             <div style={{minHeight:'10px'}}></div>
             <TextWithVerticalBar 
                 textType='span' 
-                leftText='재품 상세' 
+                leftText='제품 상세' 
                 rightText='해당 종목의 제품군 별로 상세 특징을 추가해주세요!'></TextWithVerticalBar>
             <div style={{minHeight:'10px'}}></div>
             <TextWithVerticalBar 

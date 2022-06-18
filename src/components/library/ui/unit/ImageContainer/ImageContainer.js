@@ -5,7 +5,7 @@ export default function ImageContainer(props) {
                     flexDirection:'row',
                     alignItems:'center',
                     justifyContent:'center',
-                    width:'100%',
+                    width:props.containerWidth,
                     height:props.containerHeight}}>
             <img 
                 style={{width: props.imageWidth, height: props.imageHeight, objectFit:'cover'}}

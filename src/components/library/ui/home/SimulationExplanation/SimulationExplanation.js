@@ -6,11 +6,11 @@ export default function SimulationExplanation() {
         <div>
             <IconTitleHeader
                 headerType='h2'
-                iconImage={require('../../images/Icon/icon_pie_chart_oruum_green.png')}
+                iconImage={require('../../images/Icon/icon_calculation_oruum_green.png')}
                 iconHeight='24px'
                 textColor='#34B199'
                 betweenSpace='10px'
-                text='포트폴리오'></IconTitleHeader>
+                text='시뮬레이션'></IconTitleHeader>
         </div>
     )
 }

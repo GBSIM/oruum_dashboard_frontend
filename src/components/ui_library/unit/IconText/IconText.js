@@ -3,7 +3,7 @@ import './IconText.css';
 import EditInput from '../EditInput/EditInput';
 
 export default function IconText(props) {
-    const [editFlag,setEditFlag] = useState(false);
+    const [editFlag,setEditFlag] = useState(false); 
 
     const addButtonClickEvent = () => {setEditFlag(true);};
     

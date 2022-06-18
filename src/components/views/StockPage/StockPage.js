@@ -29,34 +29,6 @@ export default function StockPage() {
                 <Header>
                 </Header>
                 <div className='page-contents'>
-                    <StockPriceBlock></StockPriceBlock>
-                    <div style={{minHeight:'10px'}}></div>
-                    <StockTags></StockTags>            
-                    <StockPriceLineGraph></StockPriceLineGraph>
-                    <div style={{minHeight:'10px'}}></div>
-                    <StockSummaryBlock></StockSummaryBlock>
-                    <div style={{minHeight:'30px'}}></div>
-                    <div className='stock-page-check-point-container'>
-                        <StockBuyPoint></StockBuyPoint>
-                        <div className='stock-page-check-point-spacer'></div>
-                        <StockSellPoint></StockSellPoint>
-                    </div>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <StockAnalysisIndicators></StockAnalysisIndicators>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <ProductsTable></ProductsTable>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <ProductsDetail></ProductsDetail>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <StockNews></StockNews>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <IncomeRoundedBarGraphs></IncomeRoundedBarGraphs>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <ExpertExpectations></ExpertExpectations>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <TargetPriceTables></TargetPriceTables>
-                    <HorizontalBar height='1px' horizontalMargin='0px' verticalMargin='30px'></HorizontalBar>
-                    <LeaderDetail></LeaderDetail>
                 </div>
             </div>
             <BottomNavMenuBar></BottomNavMenuBar>

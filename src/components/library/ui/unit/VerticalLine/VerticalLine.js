@@ -1,4 +1,3 @@
-
 export default function VerticalLine(props) {
     return (
         <div
@@ -6,7 +5,8 @@ export default function VerticalLine(props) {
                     marginRight:props.marginLeft,
                     marginTop:props.marginTop,
                     marginBottom:props.marginBottom,
-                    width:'100%',
+                    width:props.width,
+                    height:props.height,
                     background:props.lineColor}}>
         </div>
     )

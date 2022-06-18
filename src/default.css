@@ -2,10 +2,12 @@
 
 * {
 	font-family: 'Noto Sans KR', sans-serif;
+	background: #fff;
 }
 html {
 	font-family: 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
-	color: #555;
+	color: #fff;
+	background: #fff;
 	line-height: 1.2;
 	word-wrap: break-word;
 }
@@ -72,6 +74,7 @@ button {
 .page {
 	display: flex;
 	flex-direction: row;
+	background: #fff;
 }
 
 .main-contents {
@@ -142,11 +145,5 @@ span {
 
 	.page {
 		flex-direction: column;
-	}
-
-	.page-contents {
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 15px;
 	}
 }

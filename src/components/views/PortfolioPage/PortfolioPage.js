@@ -1,16 +1,16 @@
 import './PortfolioPage.css';
 import '../../../default.css';
 import SideNavMenuBar from '../../library/ui/nav/SideNavMenuBar/SideNavMenuBar';
-import BottomNavMenuBar from '../../ui_library/block/BottomNavMenuBar/BottomNavMenuBar';
-import Header from '../../ui_library/block/Header/Header';
+import BottomNavMenuBar from '../../library/ui/nav/BottomNavMenuBar/BottomNavMenuBar';
+import DashboardHeader from '../../library/ui/header/DashboardHeader/DashboardHaeder';
 
 export default function PortfolioPage() {
     return (
         <div className='page'>
             <SideNavMenuBar></SideNavMenuBar>
             <div className="main-contents">
-                <Header>
-                </Header>
+                <DashboardHeader>
+                </DashboardHeader>
                 <div className='page-contents'>
                     
                 </div>

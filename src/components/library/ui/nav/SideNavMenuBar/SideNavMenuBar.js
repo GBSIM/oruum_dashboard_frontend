@@ -51,9 +51,9 @@ export default function SideNavMenuBar() {
         <div className='side-nav-menu-bar-container'>
             <ImageContainer
                 image={require('../../images/OruumLogo/logo_oruum_investment_manager.png')}
-                imageHeight='50px'
+                imageHeight='45px'
                 containerHeight='60px'></ImageContainer>
-            <div style={{minHeight:'50px'}}></div>
+            <div style={{minHeight:'70px'}}></div>
             <IconTextButton
                 marginLeft='40px'
                 buttonOn={isHomeButtonOn}

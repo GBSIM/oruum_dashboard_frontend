@@ -13,7 +13,8 @@ const initialState = {
     input: "AAPL",
 
     // basic information
-    name: "애플",
+    koreanName: "애플",
+    englishName: "Apple Inc.",
     ticker: "AAPL",
     status: "",
     capability: "2.1T",
@@ -30,9 +31,8 @@ const initialState = {
     lastOpen: 140,
     lastHigh: 150,
     lastLow: 130,
-    lastChange: 2.15,
-    lastChangeRate: 1.07,
-    lastChangeSign: true,
+    lastChange: -2.15,
+    lastChangeRate: -1.07,
     lastVolume: 10000,
     yearlyHigh: 180.0,
     yearlyLow: 130.0,

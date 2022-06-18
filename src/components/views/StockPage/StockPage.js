@@ -6,6 +6,7 @@ import DashboardHeader from '../../library/ui/header/DashboardHeader/DashboardHa
 
 import StockProfile from '../../library/ui/stock/StockProfile/StockProfile';
 import StockPriceBlock from '../../library/ui/stock/StockPriceBlock/StockPriceBlock';
+import StockPriceLineGraph from '../../library/ui/stock/StockPriceLineGraph/StockPriceLineGraph';
 
 export default function StockPage() {
     return (
@@ -18,6 +19,8 @@ export default function StockPage() {
                 <div className='page-contents'>
                     <StockProfile></StockProfile>
                     <StockPriceBlock></StockPriceBlock>
+                    <StockPriceLineGraph></StockPriceLineGraph>
+                    
                 </div>
             </div>
             <BottomNavMenuBar></BottomNavMenuBar>

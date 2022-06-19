@@ -7,6 +7,9 @@ import DashboardHeader from '../../library/ui/header/DashboardHeader/DashboardHa
 import StockProfile from '../../library/ui/stock/StockProfile/StockProfile';
 import StockPriceBlock from '../../library/ui/stock/StockPriceBlock/StockPriceBlock';
 import StockPriceLineGraph from '../../library/ui/stock/StockPriceLineGraph/StockPriceLineGraph';
+import StockTagList from '../../library/ui/stock/StockTagList/StockTagList';
+import StockPricePeriodSelector from '../../library/ui/stock/StockPricePeriodSelector/StockPricePeriodSelector';
+import StockCheckPoint from '../../library/ui/stock/StockCheckPoint/StockCheckPoint';
 
 export default function StockPage() {
     return (
@@ -19,7 +22,11 @@ export default function StockPage() {
                 <div className='page-contents'>
                     <StockProfile></StockProfile>
                     <StockPriceBlock></StockPriceBlock>
+                    <StockTagList></StockTagList>
+                    <div style={{minHeight:'20px'}}></div>
+                    <StockPricePeriodSelector></StockPricePeriodSelector>
                     <StockPriceLineGraph></StockPriceLineGraph>
+                    <StockCheckPoint></StockCheckPoint>
                     
                 </div>
             </div>

@@ -1,0 +1,13 @@
+.rounded-button {
+    border-radius: 50px;
+    background: #34B199;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded-button:hover {
+    background-color: rgba(52,177,153,0.8);
+}

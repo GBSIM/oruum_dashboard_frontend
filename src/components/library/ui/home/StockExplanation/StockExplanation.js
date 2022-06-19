@@ -30,7 +30,7 @@ export default function StockExplanation() {
             <div style={{minHeight:'10px'}}></div>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='매일의 종가, 시초가, 고가, 저가 등의 가격 정보와 거래량 정보를 자동으로 수집해요.'></IconText>
@@ -38,7 +38,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>재무 정보</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='주식 회사들의 공시자료를 토대로 매출과 이익 등의 재무 정보를 자동 수집해요.'></IconText>
@@ -46,7 +46,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>전문가 의견</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목에 대한 전문가들의 매수, 매도 의견과 목표가를 자동 수집해요.'></IconText>
@@ -66,7 +66,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>태그</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='각 종목을 간단하게 표현할 수 있는 키워드를 태그로 등록해요.'></IconText>
@@ -74,7 +74,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>매수 포인트</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목의 긍적적인 전망을 토대로 매수 포인트를 작성해주세요.'></IconText>
@@ -82,7 +82,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>매도 포인트</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목의 부정적인 전망과 매수를 신중히 고려해야하는 이유를 작성해주세요.'></IconText>
@@ -90,7 +90,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>제품</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목의 제품군과 매출 비율, 전년 대비 성장률, 그리고 각 제품 별 태그를 추가해주세요.'></IconText>
@@ -98,7 +98,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>제품 상세</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목의 제품군 별로 상세 특징을 추가해주세요!'></IconText>
@@ -106,7 +106,7 @@ export default function StockExplanation() {
             <span style={{color:'#34B199'}}>뉴스</span>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='16px'
+                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목과 관련한 뉴스를 등록해주세요! '></IconText>

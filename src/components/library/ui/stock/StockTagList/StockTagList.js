@@ -9,7 +9,7 @@ export default function StockTagList(props) {
     return (
         <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
             <RoundedButtons textList={tagList}></RoundedButtons>
-            <AddButton text='태그 추가하기'></AddButton>
+            <AddButton text='추가하기'></AddButton>
         </div>
     )
 }

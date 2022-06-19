@@ -110,7 +110,6 @@ export default function StockExplanation() {
                 textColor='#696969'
                 betweenSpace='7px'
                 text='해당 종목과 관련한 뉴스를 등록해주세요! '></IconText>
-
         </div>
     )
 }

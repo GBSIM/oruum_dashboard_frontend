@@ -6,8 +6,7 @@ export default function IconTextButton(props) {
             <button 
                 style={{display:'block',
                         flexDirection:'row',
-                        alignItems:'center',
-                        width: '100%'}}>
+                        alignItems:'center'}}>
                 <div
                     style={{display:'flex',
                             flexDirection:'row',

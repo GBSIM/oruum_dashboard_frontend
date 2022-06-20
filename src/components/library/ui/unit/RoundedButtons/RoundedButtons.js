@@ -8,7 +8,7 @@ export default function RoundedButtons(props) {
         </div>
     ))
     return (
-        <div style={{widht:'100%',display:'flex',flexDirection:'row',alignItems:'center'}}>
+        <div style={{widht:'100%',display:'flex',flexDirection:'row',alignItems:'center',flexWrap:'wrap'}}>
             {roudnedButtonList}
         </div>
     )

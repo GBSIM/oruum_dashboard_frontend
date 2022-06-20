@@ -1,0 +1,11 @@
+.search-button {
+    background: #34B199;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background: rgba(52,177,153,0.8);
+}

@@ -20,7 +20,6 @@ export default function StockCheckPoint() {
                 <div className='check-point-box'>
                     <StockBuyPoint name={koreanName} buyPoints={buyPoints}></StockBuyPoint>
                 </div>         
-                <div className="check-point-divider"></div>
                 <div className="check-point-box">
                     <StockSellPoint name={koreanName} sellPoints={sellPoints}></StockSellPoint>
                 </div>

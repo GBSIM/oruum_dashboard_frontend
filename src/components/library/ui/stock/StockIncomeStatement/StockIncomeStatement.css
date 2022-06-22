@@ -9,9 +9,16 @@
     width:100%;
 }
 
+.stock-income-divider {
+    width: 30px;
+}
+
 @media (max-width: 600px) {
     .stock-income-statement-container {
         grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .stock-income-divider {
+        display: none;
     }
 }
 

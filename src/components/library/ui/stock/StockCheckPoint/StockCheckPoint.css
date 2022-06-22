@@ -19,6 +19,11 @@
     width:100%;
 }
 
+.check-point-divider {
+    width: 30px;
+    height: 30px;
+}
+
 @media (max-width: 1024px) {
     .check-point-container {
         flex-direction: column;
@@ -30,5 +35,14 @@
         border-radius: 0px;
         padding: 0px;
         width:100%;
+    }
+}
+
+@media (max-width:600px) {
+    .stock-check-point-edit-button-container {
+        display: none;
+    }
+    .check-point-divider {
+        width: 0px;
     }
 }

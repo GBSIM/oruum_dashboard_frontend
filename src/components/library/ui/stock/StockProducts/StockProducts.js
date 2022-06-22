@@ -13,15 +13,17 @@ export default function StockProducts() {
             salesRatio={salesRatioList[index]}
             growthRate={growthRateList[index]}
             productDetailList={productDetailList[index]}></StockProduct>
-            <div style={{minHeight:'20px'}}></div>
+            <div style={{minHeight:'30px'}}></div>
         </div>
     ))
 
     return (
         <div>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
-                <h2 style={{color:'#333333',margin:'0'}}>{koreanName}, 사야할까 말아야할까?</h2>
-                <TextButton isButton={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
+                <h2 style={{color:'#333333',margin:'0'}}>{koreanName}, 어떤 제품을 파나요?</h2>
+                <div className="stock-products-edit-button-container">
+                    <TextButton isButton={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
+                </div>
             </div>
             <div style={{minHeight:'20px'}}></div>
             <div className="stock-product-container">

@@ -17,6 +17,18 @@
 @media (max-width: 800px) {
     .stock-product-container {
         display: flex;
+        row-gap: 30px;
         flex-direction: column;
+    }
+    .stock-product-box {
+        display: flex;
+        border:0px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .stock-products-edit-button-container {
+        display: none;
     }
 }

@@ -35,4 +35,7 @@
     .header-logo-image {
         height: 35px;
     }
+    .header-search-input {
+        display: none;
+    }
 }

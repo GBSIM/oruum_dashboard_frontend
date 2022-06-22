@@ -11,14 +11,16 @@ export default function StockCheckPoint() {
         <div>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
                 <h2 style={{color:'#333333',margin:'0'}}>{koreanName}, 사야할까 말아야할까?</h2>
-                <TextButton isButton={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
+                <div className="stock-check-point-edit-button-container">
+                    <TextButton isButton={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
+                </div>
             </div>
             <div style={{minHeight:'20px'}}></div>
             <div className="check-point-container">
                 <div className='check-point-box'>
                     <StockBuyPoint name={koreanName} buyPoints={buyPoints}></StockBuyPoint>
                 </div>         
-                <div style={{minHeight:'30px',minWidth:'30px'}}></div>
+                <div className="check-point-divider"></div>
                 <div className="check-point-box">
                     <StockSellPoint name={koreanName} sellPoints={sellPoints}></StockSellPoint>
                 </div>

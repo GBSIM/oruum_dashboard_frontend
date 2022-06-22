@@ -4,7 +4,9 @@ import StockSearchInput from '../../stock/StockSearchInput/StockSearchInput';
 export default function DashboardHeader(props) {
     return (
         <div className='header-container'>
-            <StockSearchInput></StockSearchInput>
+            <div className='header-search-input'>
+                <StockSearchInput></StockSearchInput>
+            </div>
         </div>
     )
 }

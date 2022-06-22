@@ -12,9 +12,7 @@
     z-index: 1;
 }
 
-.header-logo-image {
-    height: 40px;
-    margin-right: 10px;
+.header-logo-conatiner {
     display: none;
 }
 
@@ -32,8 +30,8 @@
         height: 45px;
         justify-content: center;
     }
-    .header-logo-image {
-        height: 35px;
+    .header-logo-conatiner {
+        display: flex;
     }
     .header-search-input {
         display: none;

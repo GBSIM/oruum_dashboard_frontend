@@ -15,10 +15,10 @@ export default function StockProfile() {
                 image={require('../../images/StockLogo/logo_aapl.png')}></ImageContainer>
             <div style={{marginLeft:'10px'}}>
                 <div>
-                    <span style={{fontWeight:'500'}}>{koreanName}</span>
+                    <span style={{color:'#333333',fontWeight:'500'}}>{koreanName}</span>
                 </div>
                 <div>
-                    <span style={{fontWeight:'500'}}>{englishName} ({ticker})</span>
+                    <span style={{color:'#B9B9B9',fontWeight:'500'}}>{englishName} ({ticker})</span>
                 </div>
             </div>
             <div className="stock-profile-edit-button-container">

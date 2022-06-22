@@ -18,6 +18,14 @@ const initialState = {
     lastDailyChange: -2.69,
     lastDailyChangeRate: -1.66,
 
+    //Income
+    incomeYearArray: [2017,2018,2019,2020,2021,2022],
+    revenueArray: [0,265595000000,260174000000,274515000000,365817000000,0],
+    operatingIncomeArray: [0,70898000000,63930000000,66288000000,108949000000,0],
+    netIncomeArray: [0,59531000000,55256000000,57411000000,94680000000,0],
+    operatingMargin: 29.8,
+    netMargin: 25.9,
+
     //ORUUM contents
     tagList: ['스마트폰','전자','가상현실','플랫폼','IT'],
     buyPoints: ['아이폰이 스마트폰 시장에서 매우 독점적 위치를 차지하고 있어요!',

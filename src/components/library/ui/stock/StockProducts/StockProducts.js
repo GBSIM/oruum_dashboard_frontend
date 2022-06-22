@@ -18,7 +18,7 @@ export default function StockProducts() {
     return (
         <div>
             <h2 style={{color:'#333333'}}>{koreanName}, 어떤 제품을 파나요?</h2>
-            <div style={{minHeight:'10px'}}></div>
+            <div style={{minHeight:'0px'}}></div>
             {stockProductList}
         </div>
     )
@@ -29,7 +29,6 @@ function StockProduct(props) {
         <div>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
-                iconHeight='20px'
                 textColor='#696969'
                 betweenSpace='10px'
                 text={productDetail}></IconText>

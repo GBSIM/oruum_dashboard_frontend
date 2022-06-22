@@ -11,6 +11,7 @@ import StockTagList from '../../library/ui/stock/StockTagList/StockTagList';
 import StockPricePeriodSelector from '../../library/ui/stock/StockPricePeriodSelector/StockPricePeriodSelector';
 import StockCheckPoint from '../../library/ui/stock/StockCheckPoint/StockCheckPoint';
 import StockProducts from '../../library/ui/stock/StockProducts/StockProducts';
+import StockIncomeStatement from '../../library/ui/stock/StockIncomeStatement/StockIncomeStatement';
 
 export default function StockPage() {
     return (
@@ -29,6 +30,8 @@ export default function StockPage() {
                     <StockPriceLineGraph></StockPriceLineGraph>
                     <div style={{minHeight:'20px'}}></div>
                     <StockCheckPoint></StockCheckPoint>
+                    <div style={{minHeight:'30px'}}></div>
+                    <StockIncomeStatement></StockIncomeStatement>
                     <div style={{minHeight:'30px'}}></div>
                     <StockProducts></StockProducts>
                     

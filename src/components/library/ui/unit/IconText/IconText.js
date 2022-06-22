@@ -5,12 +5,15 @@ export default function IconText(props) {
         <div 
             style={{display:'flex',
                     flexDirection:'row',
-                    alignItems:'center',
+                    alignItems:'flex-start',
                     width: '100%'}}>
-            <ImageContainer
-                image={props.iconImage}
-                containerHeight={props.iconContainerHeight}
-                imageHeight={props.iconHeight}></ImageContainer>
+            <div style={{marginTop:'2px'}}>
+                <ImageContainer
+                    image={props.iconImage}
+                    containerHeight={'20px'}
+                    imageHeight={'20px'}></ImageContainer>
+            </div>
+            
             <span 
                 style={{color:props.textColor, marginLeft:props.betweenSpace}}>
                 {props.text}

@@ -1,0 +1,238 @@
+.stock-income-statement-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 60px 60px 60px;
+}
+
+@media (max-width: 600px) {
+    .stock-income-statement-container {
+        grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.stock-income-statement-summary {
+    flex: 1;
+}
+
+.stock-income-graph-5years-ago {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-graph-4years-ago {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-graph-3years-ago {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-graph-2years-ago {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-graph-1year-ago {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-graph-current {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;   
+}
+
+.stock-income-revenue-header {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stock-income-operating-income-header {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stock-income-net-income-header {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stock-income-revenue-5years-ago {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-revenue-4years-ago {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-revenue-3years-ago {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-revenue-2years-ago {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-revenue-1year-ago {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-revenue-current {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-5years-ago {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-4years-ago {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-3years-ago {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-2years-ago {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-1year-ago {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-operating-income-current {
+    grid-column: 7 / 8;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-5years-ago {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-4years-ago {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-3years-ago {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-2years-ago {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-1year-ago {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-income-net-income-current {
+    grid-column: 7 / 8;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .stock-income-statement-summary {
+        display: none;
+    }
+}

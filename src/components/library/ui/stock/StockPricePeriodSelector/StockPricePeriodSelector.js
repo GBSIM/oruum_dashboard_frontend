@@ -7,7 +7,7 @@ export default function StockPricePeriodSelector() {
     const dispatch = useDispatch();
 
     const changeTo1Week = () => {
-        dispatch(changePricePlotPeriod('1주일'));
+        dispatch(changePricePlotPeriod('1주'));
     }
     const changeTo1Month = () => {
         dispatch(changePricePlotPeriod('1달'));
@@ -30,8 +30,8 @@ export default function StockPricePeriodSelector() {
                      justifyContent:'space-around',
                      paddingTop:'3px',
                      paddingBottom:'3px'}}>
-            <TextButton text='1주일' buttonOnTextColor='#696969' buttonOffTextColor='#B9B9B9' 
-                        isButtonOn={plotPeriod==='1주일'} onClickEvent={changeTo1Week}></TextButton>
+            <TextButton text='1주' buttonOnTextColor='#696969' buttonOffTextColor='#B9B9B9' 
+                        isButtonOn={plotPeriod==='1주'} onClickEvent={changeTo1Week}></TextButton>
             <TextButton text='1달' buttonOnTextColor='#696969' buttonOffTextColor='#B9B9B9' 
                         isButtonOn={plotPeriod==='1달'} onClickEvent={changeTo1Month}></TextButton>
             <TextButton text='3달' buttonOnTextColor='#696969' buttonOffTextColor='#B9B9B9' 

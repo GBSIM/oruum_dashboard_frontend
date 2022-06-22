@@ -116,6 +116,7 @@ export default function StockIncomeStatement() {
                         <span style={{color: '#696969'}}>{convert_Number_to_text(netIncomeArray.at(-1),currency)}</span>
                     </div>
                 </div>
+                <div style={{minWidth:'30px'}}></div>
                 <div className='stock-income-statement-summary'>
                     <StockIncomeSummary 
                         koreanName={koreanName}

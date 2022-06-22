@@ -10,6 +10,7 @@ export default function IconText(props) {
             <div style={{marginTop:'2px'}}>
                 <ImageContainer
                     image={props.iconImage}
+                    containerWidth={'20px'}
                     containerHeight={'20px'}
                     imageHeight={'20px'}></ImageContainer>
             </div>

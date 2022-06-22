@@ -1,6 +1,7 @@
 import { useSelector,useDispatch } from "react-redux";
 import IconTitleHeader from "../../unit/IconTitleHeader/IconTitleHeader";
 import IconText from "../../unit/IconText/IconText";
+import TextButton from "../../unit/TextButton/TextButton";
 import './StockCheckPoint.css';
 
 export default function StockCheckPoint() {
@@ -8,11 +9,19 @@ export default function StockCheckPoint() {
 
     return (
         <div>
-            <h2 style={{color:'#333333'}}>{koreanName}, 사야할까 말아야할까?</h2>
+            <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
+                <h2 style={{color:'#333333',margin:'0'}}>{koreanName}, 사야할까 말아야할까?</h2>
+                <TextButton isButton={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
+            </div>
+            <div style={{minHeight:'20px'}}></div>
             <div className="check-point-container">
-                <StockBuyPoint name={koreanName} buyPoints={buyPoints}></StockBuyPoint>
-                <div style={{minHeight:'20px'}}></div>
-                <StockSellPoint name={koreanName} sellPoints={sellPoints}></StockSellPoint>
+                <div className='check-point-box'>
+                    <StockBuyPoint name={koreanName} buyPoints={buyPoints}></StockBuyPoint>
+                </div>         
+                <div style={{minHeight:'30px',minWidth:'30px'}}></div>
+                <div className="check-point-box">
+                    <StockSellPoint name={koreanName} sellPoints={sellPoints}></StockSellPoint>
+                </div>
             </div>
         </div>
     )
@@ -52,7 +61,7 @@ function StockBuyPoint(props) {
         </div>
     )
 }
-
+         
 function StockSellPoint(props) {
     return (
         <div style={{flex:'1'}}>

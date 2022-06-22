@@ -6,7 +6,8 @@ export default function ImageContainer(props) {
                     alignItems:'center',
                     justifyContent:'center',
                     width:props.containerWidth,
-                    height:props.containerHeight}}>
+                    minWidth:props.containerWidth,
+                    height:props.containerHeight,}}>
             <img 
                 style={{width: props.imageWidth, height: props.imageHeight, objectFit:'cover'}}
                 src={props.image}></img>

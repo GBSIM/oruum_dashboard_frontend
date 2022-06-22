@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 90px 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 60px 60px 60px;
+    border:1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 20px 20px 30px 20px;
+    width:100%;
 }
 
 @media (max-width: 600px) {
@@ -13,6 +17,7 @@
 
 .stock-income-statement-summary {
     flex: 1;
+    margin: 20px;
 }
 
 .stock-income-graph-5years-ago {
@@ -231,8 +236,13 @@
     align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .stock-income-statement-summary {
         display: none;
+    }
+    .stock-income-statement-container {
+        border:0px solid #DCDCDC;
+        border-radius: 0px;
+        padding: 0;
     }
 }

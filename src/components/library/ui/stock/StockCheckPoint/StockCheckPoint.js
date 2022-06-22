@@ -39,7 +39,7 @@ function StockBuyPoint(props) {
                 textColor='#333333'
                 betweenSpace='5px'
                 text={props.name + ' 매수하자!'}></IconTitleHeader>
-            <div style={{minHeight:'10px'}}></div>
+            <div style={{minHeight:'20px'}}></div>
             <IconText
                 iconImage={require('../../images/Icon/icon_check_box_oruum_green.png')}
                 iconHeight='20px'
@@ -74,7 +74,7 @@ function StockSellPoint(props) {
                 textColor='#333333'
                 betweenSpace='5px'
                 text={props.name + ', 좀 더 고민해봐야...!?'}></IconTitleHeader>
-            <div style={{minHeight:'10px'}}></div>
+            <div style={{minHeight:'20px'}}></div>
             <IconText
                 iconImage={require('../../images/Icon/icon_danger_yellow.png')}
                 iconHeight='20px'

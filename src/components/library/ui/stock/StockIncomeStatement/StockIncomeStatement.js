@@ -59,9 +59,6 @@ export default function StockIncomeStatement() {
                         <StockIncomeHeader color='#9AD8CD' text='순이익'></StockIncomeHeader>
                     </div>
 
-                    <div className="stock-income-revenue-5years-ago">
-                        <span style={{color: '#696969'}}>{convert_Number_to_text(revenueArray.at(-6),currency)}</span>
-                    </div>
                     <div className="stock-income-revenue-4years-ago">
                         <span style={{color: '#696969'}}>{convert_Number_to_text(revenueArray.at(-5),currency)}</span>
                     </div>
@@ -78,9 +75,6 @@ export default function StockIncomeStatement() {
                         <span style={{color: '#696969'}}>{convert_Number_to_text(revenueArray.at(-1),currency)}</span>
                     </div>
 
-                    <div className="stock-income-operating-income-5years-ago">
-                        <span style={{color: '#696969'}}>{convert_Number_to_text(operatingIncomeArray.at(-6),currency)}</span>
-                    </div>
                     <div className="stock-income-operating-income-4years-ago">
                         <span style={{color: '#696969'}}>{convert_Number_to_text(operatingIncomeArray.at(-5),currency)}</span>
                     </div>
@@ -97,9 +91,6 @@ export default function StockIncomeStatement() {
                         <span style={{color: '#696969'}}>{convert_Number_to_text(operatingIncomeArray.at(-1),currency)}</span>
                     </div>
 
-                    <div className="stock-income-net-income-5years-ago">
-                        <span style={{color: '#696969'}}>{convert_Number_to_text(netIncomeArray.at(-6),currency)}</span>
-                    </div>
                     <div className="stock-income-net-income-4years-ago">
                         <span style={{color: '#696969'}}>{convert_Number_to_text(netIncomeArray.at(-5),currency)}</span>
                     </div>

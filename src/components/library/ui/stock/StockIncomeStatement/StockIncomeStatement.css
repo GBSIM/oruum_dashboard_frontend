@@ -13,12 +13,34 @@
     width: 30px;
 }
 
+.stock-income-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stock-income-header-color-bar {
+    width: 20px;
+    height: 8px;
+    border-radius: 2px;
+}
+
 @media (max-width: 600px) {
     .stock-income-statement-container {
-        grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .stock-income-divider {
         display: none;
+    }
+    .stock-income-header-color-bar {
+        width: 20px;
+        height: 8px;
+        border-radius: 2px;
+    }
+    .stock-income-header-color-bar {
+        width: 5px;
+        height: 15px;
+        border-radius: 2px;
     }
 }
 

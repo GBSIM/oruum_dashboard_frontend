@@ -153,8 +153,8 @@ function IncomeBarGraph(props) {
 
 function StockIncomeHeader(props) {
     return (
-        <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-            <div style={{width:'20px',height:'8px',borderRadius:'2px',background:props.color}}></div>
+        <div className="stock-income-header-container">
+            <div className='stock-income-header-color-bar' style={{background:props.color}}></div>
             <div style={{minWidth:'8px'}}></div>
             <span style={{color: '#B9B9B9'}}>{props.text}</span>
         </div>

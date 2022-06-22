@@ -8,11 +8,11 @@ import StockBasicInfo from '../../library/ui/stock/StockBasicInfo/StockBasicInfo
 import StockCheckPoint from '../../library/ui/stock/StockCheckPoint/StockCheckPoint';
 import StockProducts from '../../library/ui/stock/StockProducts/StockProducts';
 import StockIncomeStatement from '../../library/ui/stock/StockIncomeStatement/StockIncomeStatement';
+import StockNews from '../../library/ui/stock/StockNews/StockNews';
 
 export default function StockPage() {
     return (
         <div className='page'>
-            {/* <NavBar></NavBar> */}
             <SideNavMenuBar></SideNavMenuBar>
             <div className='main-contents'>
                 <DashboardHeader>
@@ -33,7 +33,10 @@ export default function StockPage() {
                     <div className='dashboard-shadow-box'>
                         <StockProducts></StockProducts>
                     </div>
-                    
+                    <div style={{minHeight:'30px',background:'rgba(0,0,0,0)'}}></div>
+                    <div className='dashboard-shadow-box'>
+                        <StockNews></StockNews>
+                    </div>
                 </div>
             </div>
             <BottomNavMenuBar></BottomNavMenuBar>

@@ -44,6 +44,20 @@ const initialState = {
                        ['아이패드 프로, 아이패드 에어, 아이패드 미니 등을 포함하는 제품군이에요.','전체 태블릿 시장에서 애플은 출하량으로만 연간 30~40%를 차지해요!','높은 애플의 아이패드 가격을 고려하였을 때 매출로 따진 시장 비율은 60%'],
                        ['애플케어, 클라우드,애플페이와 디지털 서비스 등을 포함하는 제품군이에요.'],
                        ['데스크탑 맥 제품과,노트북인 맥북 프로, 맥북 에어 등을 포함하는 제품군이에요.']],
+
+    //News
+    newsImageList: ['https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2022%2F06%2FMost-profit-made-companey-in-the-world-info-00.jpeg?q=90&w=1400&cbr=1&fit=max',
+                   'https://img.hankyung.com/photo/202206/01.30396377.1.jpg'],
+    newsLinkList: ['https://hypebeast.kr/2022/6/most-profit-made-companey-in-the-world-info',
+                   'https://www.hankyung.com/finance/article/202206227299i'],
+    newsTitleList: [' 애플도 구글도 아니다, 전 세계에서 가장 많은 순익을 올린 기업은 어디? ',
+                    '중국에서 날아온 낭보…활짝 웃은 애플'],
+    newsContentsList: ['2022년 들어 전 세계에서 가장 많은 순이익을 올린 기업은 어디일까?',
+                       'UBS가 애플(AAPL)에 대해 ‘매수’ 의견을 유지했습니다'],
+    newsDateList: ['2022-06-22',
+                   '2022-06-22'],
+    newsJournalList: ['한경글로벌마켓',
+                      '하이프비스트'],
 };
 
 export async function getCurrentPrice(tickerInput) {

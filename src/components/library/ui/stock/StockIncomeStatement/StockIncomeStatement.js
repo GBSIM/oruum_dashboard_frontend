@@ -121,6 +121,7 @@ export default function StockIncomeStatement() {
                     <StockIncomeSummary 
                         koreanName={koreanName}
                         averageRevenueGrowth={'20.5'}
+                        averageOperatingIncomeGrowth={'15.2'}
                         operatingMargin={operatingMargin}
                         netMargin={netMargin}></StockIncomeSummary>
                 </div>
@@ -163,21 +164,31 @@ function StockIncomeHeader(props) {
 
 function StockIncomeSummary(props) {
     return (
-        <div style={{display:'flex',flexDirection:'column',marginLeft:'100px',marginTop:'100px'}}>
+        <div style={{display:'flex',flexDirection:'column',marginLeft:'90px',marginTop:'70px'}}>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-                <h2 style={{color:'#B9B9B9'}}>{props.koreanName}의</h2><h2 style={{color:'#333333'}}>&nbsp;매출</h2><h2 style={{color:'#B9B9B9'}}>은</h2>
+                <h2 style={{margin:0,color:'#B9B9B9'}}>{props.koreanName}의</h2>
             </div>
+            <div style={{minHeight:'10px'}}></div>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-                <h2 style={{color:'#B9B9B9'}}>최근 5년</h2><h2 style={{color:'#34B199'}}>&nbsp;평균 {props.averageRevenueGrowth}%</h2><h2 style={{color:'#B9B9B9'}}>씩 성장 중!</h2>
+                <h2 style={{margin:0,color:'#333333'}}>매출</h2><h2 style={{margin:0,color:'#B9B9B9'}}>은 매년</h2>
+                <h2 style={{margin:0,color:'#34B199'}}>&nbsp;평균 {props.averageRevenueGrowth}%</h2>
+                <h2 style={{margin:0,color:'#B9B9B9'}}>씩 성장 중!</h2>
             </div>
-            <div style={{minHeight:'30px'}}></div>
+            <div style={{minHeight:'10px'}}></div>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-                <h2 style={{color:'#B9B9B9'}}>{props.koreanName}의</h2><h2 style={{color:'#333333'}}>&nbsp;영업이익률</h2><h2 style={{color:'#B9B9B9'}}>은</h2>
-                <h2 style={{color:'#34B199'}}>&nbsp;{props.operatingMargin}%</h2>
+                <h2 style={{margin:0,color:'#333333'}}>영업이익</h2><h2 style={{margin:0,color:'#B9B9B9'}}>은 매년</h2>
+                <h2 style={{margin:0,color:'#34B199'}}>&nbsp;평균 {props.averageOperatingIncomeGrowth}%</h2>
+                <h2 style={{margin:0,color:'#B9B9B9'}}>씩 성장 중!</h2>
             </div>
+            <div style={{minHeight:'50px'}}></div>
             <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-                <h2 style={{color:'#B9B9B9'}}>{props.koreanName}의</h2><h2 style={{color:'#333333'}}>&nbsp;순이익률</h2><h2 style={{color:'#B9B9B9'}}>은</h2>
-                <h2 style={{color:'#34B199'}}>&nbsp;{props.netMargin}%</h2>
+                <h2 style={{margin:0,color:'#333333'}}>영업이익률</h2><h2 style={{margin:0,color:'#B9B9B9'}}>은</h2>
+                <h2 style={{margin:0,color:'#34B199'}}>&nbsp;{props.operatingMargin}%</h2>
+            </div>
+            <div style={{minHeight:'10px'}}></div>
+            <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
+                <h2 style={{margin:0,color:'#333333'}}>순이익률</h2><h2 style={{margin:0,color:'#B9B9B9'}}>은</h2>
+                <h2 style={{margin:0,color:'#34B199'}}>&nbsp;{props.netMargin}%</h2>
             </div>
         </div>
     )

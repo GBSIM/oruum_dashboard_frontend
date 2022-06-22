@@ -7,7 +7,7 @@ export default function IconText(props) {
                     flexDirection:'row',
                     alignItems:'flex-start',
                     width: '100%'}}>
-            <div style={{marginTop:'2px'}}>
+            <div style={{marginTop:'3px'}}>
                 <ImageContainer
                     image={props.iconImage}
                     containerWidth={'20px'}

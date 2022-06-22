@@ -146,4 +146,10 @@ span {
 	.page {
 		flex-direction: column;
 	}
+	.page-contents {
+		padding-bottom: 100px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+	}
 }

@@ -25,15 +25,21 @@ export default function StockPage() {
                     <StockProfile></StockProfile>
                     <StockPriceBlock></StockPriceBlock>
                     <StockTagList></StockTagList>
-                    <div style={{minHeight:'20px'}}></div>
+                    <div style={{minHeight:'20px',background:'rgba(0,0,0,0)'}}></div>
                     <StockPricePeriodSelector></StockPricePeriodSelector>
                     <StockPriceLineGraph></StockPriceLineGraph>
-                    <div style={{minHeight:'20px'}}></div>
-                    <StockCheckPoint></StockCheckPoint>
-                    <div style={{minHeight:'30px'}}></div>
-                    <StockIncomeStatement></StockIncomeStatement>
-                    <div style={{minHeight:'30px'}}></div>
-                    <StockProducts></StockProducts>
+                    <div style={{minHeight:'20px',background:'rgba(0,0,0,0)'}}></div>
+                    <div className='dashboard-shadow-box'>
+                        <StockCheckPoint></StockCheckPoint>
+                    </div>
+                    <div style={{minHeight:'30px',background:'rgba(0,0,0,0)'}}></div>
+                    <div className='dashboard-shadow-box'>
+                        <StockIncomeStatement></StockIncomeStatement>
+                    </div>
+                    <div style={{minHeight:'30px',background:'rgba(0,0,0,0)'}}></div>
+                    <div className='dashboard-shadow-box'>
+                        <StockProducts></StockProducts>
+                    </div>
                     
                 </div>
             </div>

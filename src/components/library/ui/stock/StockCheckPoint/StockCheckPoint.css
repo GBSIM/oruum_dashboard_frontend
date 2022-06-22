@@ -1,3 +1,10 @@
+.stock-check-point-conatiner {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(220, 220, 220, 1);
+}
+
 .check-point-container {
     display: flex;
     flex-direction: row;

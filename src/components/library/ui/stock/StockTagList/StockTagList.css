@@ -1,0 +1,5 @@
+@media (max-width: 600px) {
+    .stock-tag-list-add-button-container {
+        display: none;
+    }
+}

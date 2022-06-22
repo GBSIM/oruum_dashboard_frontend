@@ -60,7 +60,6 @@ function StockProduct(props) {
             </div>
             <div style={{height:'10px'}}></div>
             {productDetailList}
-            <AddButton text='추가하기'></AddButton>
         </div>
     )
 }

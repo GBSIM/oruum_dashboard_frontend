@@ -20,4 +20,7 @@
     .stock-page-check-point-spacer {
         min-height: 10px;
     }
+    .dashboard-shadow-box {
+        padding: 15px;
+    }
 }

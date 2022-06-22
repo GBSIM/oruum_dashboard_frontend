@@ -1,0 +1,12 @@
+.stock-profile-edit-button-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media (max-width:600px) {
+    .stock-profile-edit-button-container {
+        display: none;
+    }
+}

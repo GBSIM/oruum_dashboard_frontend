@@ -1,6 +1,9 @@
 import { useSelector,useDispatch } from "react-redux";
 
 import ImageContainer from "../../unit/ImageContainer/ImageContainer";
+import TextButton from "../../unit/TextButton/TextButton";
+
+import './StockProfile.css';
 
 export default function StockProfile() {
     const {koreanName, englishName, ticker} = useSelector(state => state.stock);
@@ -17,6 +20,9 @@ export default function StockProfile() {
                 <div>
                     <span style={{fontWeight:'500'}}>{englishName} ({ticker})</span>
                 </div>
+            </div>
+            <div className="stock-profile-edit-button-container">
+                <TextButton isButtonOn={false} buttonOffTextColor='#B9B9B9' text='편집하기'></TextButton>
             </div>
         </div>
     )

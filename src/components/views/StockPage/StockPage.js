@@ -9,6 +9,7 @@ import StockCheckPoint from '../../library/ui/stock/StockCheckPoint/StockCheckPo
 import StockProducts from '../../library/ui/stock/StockProducts/StockProducts';
 import StockIncomeStatement from '../../library/ui/stock/StockIncomeStatement/StockIncomeStatement';
 import StockNews from '../../library/ui/stock/StockNews/StockNews';
+import StockExpertOpinion from '../../library/ui/stock/StockExpertOpinion/StockExpertOpinion';
 
 export default function StockPage() {
     return (
@@ -36,6 +37,10 @@ export default function StockPage() {
                     <div style={{minHeight:'30px',background:'rgba(0,0,0,0)'}}></div>
                     <div className='dashboard-shadow-box'>
                         <StockNews></StockNews>
+                    </div>
+                    <div style={{minHeight:'30px',background:'rgba(0,0,0,0)'}}></div>
+                    <div className='dashboard-shadow-box'>
+                        <StockExpertOpinion></StockExpertOpinion>
                     </div>
                 </div>
             </div>

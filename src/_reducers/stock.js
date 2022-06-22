@@ -58,6 +58,16 @@ const initialState = {
                    '2022-06-22'],
     newsJournalList: ['한경글로벌마켓',
                       '하이프비스트'],
+
+    //Expert
+    expertStrongSell: 0,
+    expertSell: 0,
+    expertHold: 6,
+    expertBuy: 21,
+    expertStrongBuy: 11,
+    targetPriceLow: 160,
+    targetPriceAvg: 193.5,
+    targetPriceHigh:225,
 };
 
 export async function getCurrentPrice(tickerInput) {

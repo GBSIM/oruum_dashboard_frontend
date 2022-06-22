@@ -135,7 +135,7 @@ function TargetPrice() {
 
 function TargetPricePoint(props) {
     return (
-        <div style={{position:'absolute',top:props.top,left:String(props.left)+'%',display:'flex',flexDirection:'column',alignItems:'center',width:'100px'}}>
+        <div style={{background:'rgba(0,0,0,0)',position:'absolute',top:props.top,left:String(props.left)+'%',display:'flex',flexDirection:'column',alignItems:'center',width:'100px'}}>
             <div style={{width:'0px',height:'0px',borderBottom:'20px solid'+props.color,borderLeft:'10px solid transparent',borderRight:'10px solid transparent'}}></div>
             <div><span style={{color:'#B9B9B9'}}>{props.text}</span></div>
             <div><span style={{color:props.color}}>{props.unit}{props.price}</span></div>
@@ -146,7 +146,7 @@ function TargetPricePoint(props) {
 
 function CurrentPricePoint(props) {
     return (
-        <div style={{position:'relative',top:props.top,left:String(props.left)+'%',display:'flex',flexDirection:'column',alignItems:'center',width:'100px'}}>
+        <div style={{background:'rgba(0,0,0,0)',position:'relative',top:props.top,left:String(props.left)+'%',display:'flex',flexDirection:'column',alignItems:'center',width:'100px'}}>
             <div><span style={{color:'#333333'}}>{props.unit}{props.price}</span></div>
             <div><span style={{color:'#B9B9B9'}}>{props.text}</span></div>
             <div style={{marginTop:'5px',width:'0px',height:'0px',borderTop:'20px solid #333333',borderLeft:'10px solid transparent',borderRight:'10px solid transparent'}}></div>

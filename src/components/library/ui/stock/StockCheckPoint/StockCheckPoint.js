@@ -62,7 +62,7 @@ function StockSellPoint(props) {
                 headerType='h3'
                 textColor='#333333'
                 betweenSpace='5px'
-                text={props.name + ' 매수하자!'}></IconTitleHeader>
+                text={props.name + ', 좀 더 고민해봐야...!?'}></IconTitleHeader>
             <div style={{minHeight:'10px'}}></div>
             <IconText
                 iconImage={require('../../images/Icon/icon_danger_yellow.png')}

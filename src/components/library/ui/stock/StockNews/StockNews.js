@@ -40,7 +40,7 @@ function News(props) {
         <div>
             <a className='news-container' href={props.link} target="_blank">
                 <img className="news-image" src={props.image}></img>
-                <div style={{minWidth: '10px'}}></div>
+                <div style={{minWidth: '15px'}}></div>
                 <div className="news-text-container">
                     <h3 className="news-title">{props.title}</h3>
                     <span className="news-contents">{props.contents}</span>
